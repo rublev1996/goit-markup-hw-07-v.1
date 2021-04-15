@@ -82,3 +82,42 @@
 }
 
 $main_font:Roboto;
+
+$logo_font:Raleway;
+
+%section {
+    font-family: inherit;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%conteiner {
+    font-family: inherit;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+}
+
+%index-list-item:not(:last-child){
+    font-style: inherit;
+    margin-right: 30px;
+}
+
+%visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+

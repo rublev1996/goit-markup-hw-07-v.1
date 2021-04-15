@@ -21,12 +21,12 @@
     align-items: center;
     list-style-type: none;
     width: 294px;
+
+    &__item{
+        margin-right: 50px;
+    }
 }
 
-
-.navigation-list__item{
-    margin-right: 50px;
-}
 
 .header-contacts-list {
     display: flex;
@@ -52,6 +52,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--header-link-default);
+    
     &:focus,
     &:hover,
     &:active{
@@ -78,36 +79,50 @@
 .header-cotacts-list__item {
     display: flex;
     list-style-type: none;
-    & .contact-anker {
-        transition-duration: 250ms;
-        transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: fill;
-        display: flex;
-        text-decoration: none;
-        padding-right: 50px;
-    }
 }
 
 .header-cotacts-list__item--end {
     display: flex;
     list-style-type: none;
-    & .contact-anker {
-        transition-duration: 250ms;
-        transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-        transition-property: fill;
-        display: flex;
-        text-decoration: none;
-        padding-right: 50px;
-    }
 }
+
 .contacts-ico-wrapper {
     margin-right: 10px;
 }
 
-.contact:active,
-.contact:focus,
-.contact:hover{
-    fill: var(--contact-ico-fill-hover);
+.contact-anker {
+    transition-duration: 250ms;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+    display: flex;
+    text-decoration: none;
+    padding-right: 50px;
+
+    &:active,
+    &:focus,
+    &:hover{
+        fill: var(--contact-ico-fill-hover);
+    }
+
+    &:active &__text,
+    &:focus &__text,
+    &:hover &__text {
+        color: var(--header-contact-ref-text-hover);
+    }
+    
+    &__text{
+    transition-duration: 250ms;
+    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    font-family: $main_font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    /*var*/
+    color: var(--header-contact-text-default);
+    text-decoration: none;
+    }
 }
 
 .header-contact-ref-text{
@@ -124,31 +139,6 @@
     text-decoration: none;
 }
 
-.contact-anker__text{
-    transition-duration: 250ms;
-    transition-timing-function:  cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-    font-family: $main_font;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    /*var*/
-    color: var(--header-contact-text-default);
-    text-decoration: none;
-}
-
-.header-link:active,
-.header-link:focus,
-.header-link:hover{
-    font-family: $main_font;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--header-link-active);
-    text-decoration: none;
-}
 
 .header-link{
     font-family: $main_font;
@@ -159,20 +149,19 @@
     /*var*/
     color: var(--header-link-default);
     text-decoration: none;
-}
 
-
-.contact-active:active,
-.contact-active:focus,
-.contact-active:hover{
+    &:active,
+    &:focus,
+    &:hover{
     font-family: $main_font;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color:var(--contact-hover-active);
+    color: var(--header-link-active);
     text-decoration: none;
-}  
+}
+}
 
 .contact-anker{
     font-family: $main_font;

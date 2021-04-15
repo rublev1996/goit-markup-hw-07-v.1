@@ -1,35 +1,39 @@
 .logo {
+    font-style: $logo_font;
     text-decoration: none;
     margin-right: 93px;
-}
 
-.logo__first-verb{
-    font-family: Raleway;
-	font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--logo-first-verb-color);
-    margin-left: 0px;
-    margin-right: 0px;
-}
+    &__first-verb{
+        font-family: $logo_font;
+        font-family: $logo_font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: var(--logo-first-verb-color);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 
-.logo__second-verb{
-    font-family: Raleway;
-	font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--logo-second-verb-color);
-    margin-left: 0px;
-    margin-right: 0px;
-}
+    &__second-verb{
+        font-family: $logo_font;
+        font-family: $logo_font;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+        color: var(--logo-second-verb-color);
+        margin-left: 0px;
+        margin-right: 0px;
+    
+    }
 
-.logo__second-verb--footer {
-    color: var(--footer-logo-second-verb-color);
+    &__second-verb--footer {
+        @extend .logo__second-verb;
+        color: var(--footer-logo-second-verb-color);
+    }
+    
 }

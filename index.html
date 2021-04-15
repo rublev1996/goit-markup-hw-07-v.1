@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="body">
     <header class="header">
@@ -57,8 +57,8 @@
     <main class="main">
         <section class="hero">
             <div class="hero-content-wrapper">
-                <h1  class="hero-section__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-section__order-button" data-modal-open >Заказать услугу</button>
+                <h1  class="hero-content-wrapper__title">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero-content-wrapper__order-button" data-modal-open >Заказать услугу</button>
             </div>
         </section>
         <section class="advantages">
@@ -106,7 +106,7 @@
         </section>
         <section class="occupation">
             <div class="occupation-content-wrapper">
-                <h2 class="occupation-content-wrapper__occupation-title">Чем мы занимаемся</h2>
+                <h2 class="occupation-content-wrapper__title">Чем мы занимаемся</h2>
                 <ul class="occupation-list">
                     <li class="occupation-item">
                         <a href="" class="occupation-item__anker">
@@ -367,33 +367,42 @@
                     <span class="logo__first-verb">Web</span>
                     <span class="logo__second-verb--footer">Studio</span>
                 </a>
-                <ul class="footer-contacts-list">
-                    <li class="item"><a href="" class="footer-contacts-list__item"><a href="tel:+380961111111" class="footer-contact"></a>+380961111111</a></li>
-                    <li class="item"><a href="" class="footer-contacts-list__item"><a href="mailto:info@example.com" class="footer-contact">info@example.com</a></a></li>
-                </ul>
+                <address class="contacts-content-wrapper">
+                    <p class="contacts-content-wrapper__text">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="footer-contacts-list">
+                        <li class="footer-contacts-list__item"><a href="teL:+380961111111" class="footer-contact">+380961111111</a></li>
+                        <li class="footer-contacts-list__item--end"><a href="mailto:info@example.com" class="footer-contact">info@example.com</a></li>
+                    </ul>
+                </address>
             </div>
             <div class="footer-soc-link-wrapp">
-                <p class="footer-soc-link-wrapp__title"></p>
+                <p class="footer-soc-link-wrapp__title">присоединяйтесь</p>
                 <ul class="footer-soc-ref-list">
                     <li class="footer-soc-ref-list__item">
-                        <svg class="footer-soc-link-anker__soc-icon">
-                            <use></use>
-                        </svg>
+                        <a href="" class="footer-soc-referece">
+                            <svg class="footer-soc-referece__soc-icon">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-soc-ref-list__item">
-                        <svg class="footer-soc-link-anker__soc-icon">
-                            <use></use>
-                        </svg>
+                        <a href="" class="footer-soc-referece">
+                            <svg class="footer-soc-referece__soc-icon">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-soc-ref-list__item">
-                        <svg class="footer-soc-link-anker__soc-icon">
-                            <use></use>
-                        </svg>
+                        <a href="" class="footer-soc-referece">
+                            <svg class="footer-soc-referece__soc-icon">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="footer-soc-ref-list__item">
-                        <a href="#" class="footer-soc-link-anker">
-                            <svg class="footer-soc-link-anker__soc-icon">
-                                <use></use>
+                    <li class="footer-soc-ref-list__item--end">
+                        <a href="#" class="footer-soc-referece">
+                            <svg class="footer-soc-referece__soc-icon">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
                             </svg>
                         </a>
                     </li>
@@ -403,24 +412,24 @@
                 <b class="footer-subscribe-division__appeal">Подпишитесь на рассылку</b>
                 <form action="#" class="footer-subscribe-form">
                     <input type="text" type="email" placeholder="E-mail" class="footer-subscribe-form__input"></input>
-                    <button class="footer-submit-button">
+                    <button class="footer-submit-button" type="submit">
                         <span class="footer-submit-button__description">Подписаться</span>
-                        <svg class="footer-subscribe-button__icon">
-                            <use ></use>
+                        <svg class="footer-submit-button__icon">
+                            <use href="./images/icons.svg#paper-plane"></use>
                         </svg>
                     </button>
                 </form>
             </div>
         </div>
     </footer>
-
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="close-button">
-                    <svg class="close-button__icon" data-modal-close>
+                <button class="close-button" type="button" data-modal-close>
+                    <svg class="close-button__icon">
                         <use href="./images/icons.svg#icon-close_button"></use>
                     </svg>
                 </button>
+                <b class="modal__appeal">Оставьте свои данные, мы вам перезвоним</b>
                 <div class="modal-form-wrapp">
                     <form action="#" class="modal-form">
                         <label class="modal-form__item">
@@ -428,7 +437,7 @@
                                 <p class="input-description-wrapp__text">Имя</p>
                             </span>
                             <span class="input-wrapp">
-                                <input type="text" class="input-wrapp__entry-filed"></input>
+                                <input required type="text" class="input-wrapp__entry-filed"></input>
                                 <svg class="input-wrapp__icon--name">
                                     <use href="./images/icons.svg#icon-people-name"></use>
                                 </svg>
@@ -439,8 +448,8 @@
                                 <p class="input-description-wrapp__text">Телефон</p>
                             </span>
                             <span class="input-wrapp">
-                                <input input required pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" name="user-tel" type="tel" minlength="10" class="input-wrapp__entry-filed"></input>
-                                <svg class="input-wrapp__icon--name">
+                                <input required input required pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" name="user-tel" type="tel" minlength="10" class="input-wrapp__entry-filed"></input>
+                                <svg class="input-wrapp__icon--phone">
                                     <use href="./images/icons.svg#icon-phone"></use>
                                 </svg>
                             </span>
@@ -450,17 +459,23 @@
                                 <p class="input-description-wrapp__text">Почта</p>
                             </span>
                             <span class="input-wrapp">
-                                <input name="user-email" type="email" class="input-wrapp__entry-filed"></input>
-                                <svg class="input-wrapp__icon--name">
-                                    <use href="./images/icons.svg#icon-phone"></use>
+                                <input required name="user-email" type="email" class="input-wrapp__entry-filed"></input>
+                                <svg class="input-wrapp__icon--mail">
+                                    <use href="./images/icons.svg#icon-mail"></use>
                                 </svg>
                             </span>
                         </label>
+                        <label class="textarea">
+                            <span required class="textarea__description">Комментарий</span>
+                            <div>
+                                <textarea name="user-massege" class="textarea-wrapp" resize="none" placeholder="Введите текст"></textarea>
+                            </div>
+                        </label>
                         <div class="checkbox-division">
-                            <input id="modal-checkbox" type="text" class="checkbox-division__checkbox">
+                            <input id="modal-checkbox" required type="checkbox" class="checkbox-division__checkbox">
                             <label for="modal-checkbox" class="chechbox-description-wrapper">
                                 <span class="checbox-description">Соглашаюсь с рассылкой и принимаю
-                                    <a href="" class="checkbox-description__anker">Условия договора</a>
+                                    <a href="" class="checbox-description__anker">Условия договора</a>
                                 </span>
                             </label>
                         </div>

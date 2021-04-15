@@ -1,6 +1,6 @@
 
 @import '_utils/_variables.scss';
-@import '_features/_features.scss';
+@import '_features/_main-styles.scss';
 
 /*UNIVERSAL-PARTS*/
 
@@ -8,6 +8,7 @@
 @import '_header/_header.scss';
 @import '_header/_header.scss';
 @import '_footer/_footer.scss';
+@import '_footer/_footer-modal.scss';
 
 /*INDEX.HTML*/
 
@@ -16,5 +17,9 @@
 @import '_index/_occupation.scss';
 @import '_index/_staff.scss';
 @import '_index/_partners.scss';
+@import '_index/_backdrop.scss';
 
 /*PORTFOLIO.HTML*/
+
+@import '_portfolio/_button-set.scss';
+@import '_portfolio/_grid.scss'

@@ -9,38 +9,42 @@
     flex-direction: column;
     align-content: center;
     @extend %conteiner;
+
+    &__title {
+        display: block;
+        align-self: center;
+        margin-bottom: 50px;
+    }
 }
 
 .occupation-description{
     position:relative;
-}
 
-.occupation-description__text {
-    display: box;
-    width: 370px;
-    top: 224px;
-    left: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 83px;
-    padding-right: 82px;
-    background-color: rgba(47, 48, 58, 0.8);
-    position: absolute;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--occupation-item-desription-text);
-}
+    &__image {
+        display: block;
+    }
 
-.occupation-content-wrapper__occupation-title {
-    display: block;
-    align-self: center;
-    margin-bottom: 50px;
+    &__text {
+        display: box;
+        width: 370px;
+        top: 224px;
+        left: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-left: 83px;
+        padding-right: 82px;
+        background-color: rgba(47, 48, 58, 0.8);
+        position: absolute;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--occupation-item-desription-text);
+    }
 }
 
 .occupation-list {
@@ -52,15 +56,4 @@
 
 .occupation-item {
     @extend %index-list-item
-}
-
-.occupation-description__text {
-    font-family: inherit;
-    font-style: bold;
-    font-size: 14px;
-    line-height: 1.2;
-    }
-
-.occupation-description__image {
-    display: block;
 }
