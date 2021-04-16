@@ -93,7 +93,7 @@
   margin: 0px auto;
 }
 
-.advantage-item:not(:last-child), .occupation-item:not(:last-child), .staff-item:not(:last-child) {
+.advantage-list-item:not(:last-child), .occupation-item:not(:last-child), .staff-item:not(:last-child) {
   font-style: inherit;
   margin-right: 30px;
 }
@@ -597,11 +597,11 @@ ul {
   list-style-type: none;
 }
 
-.advantage-item {
+.advantage-list-item {
   width: 297px;
 }
 
-.advantage-item__title {
+.advantage-list-item__title {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.1;
@@ -611,7 +611,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.advantage-item__description {
+.advantage-list-item__description {
   font-family: inherit;
   font-weight: normal;
   font-size: 14px;
