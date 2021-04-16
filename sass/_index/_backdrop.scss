@@ -103,7 +103,6 @@
         left: 15px;
         height: 12px;
         width: 12px;
-    
     }
     
     &__icon--phone {
@@ -248,6 +247,7 @@
 .submit-button-division{
     display: flex;
     justify-content: center;
+    @extend %button;
 }
 
 .modal-submit-button{

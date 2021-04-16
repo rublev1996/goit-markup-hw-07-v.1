@@ -125,6 +125,10 @@ $logo_font:Raleway;
     color: var(--second-title-color);
 }
 
+%button {
+    border:none;
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
