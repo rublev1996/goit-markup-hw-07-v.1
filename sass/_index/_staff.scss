@@ -7,13 +7,13 @@
     display: flex;
     flex-direction: column;
     @extend %conteiner;
+
+    &__title {
+        align-self: center;
+        margin-bottom: 50px;
+        @extend %second-title;
+    }
 } 
-
-.staff-division__title {
-    align-self: center;
-    margin-bottom: 50px;
-
-}
 
 .staff-list{
     font-family: inherit;

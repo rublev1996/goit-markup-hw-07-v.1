@@ -9,15 +9,16 @@
     justify-content: center;
     align-items: center;
     @extend %conteiner;
-}
 
-.partners__title {
-    padding-bottom: 50px;
-}
-
-.partners__list {
-    display: flex;
-    list-style-type: none;
+    &__title {
+        padding-bottom: 50px;
+        @extend %second-title;
+    }
+    
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
 }
 
 .partener-item {

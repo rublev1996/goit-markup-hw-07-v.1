@@ -115,6 +115,16 @@ $logo_font:Raleway;
     overflow: hidden;
   }
 
+%second-title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;

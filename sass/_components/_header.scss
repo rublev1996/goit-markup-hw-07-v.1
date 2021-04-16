@@ -61,6 +61,21 @@
     }
 }
 
+.header-link-active {
+    @extend .header-link;
+    color: var(--header-link-active);
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        margin-top: 28px;
+        width: 100%;
+        height: 4px;
+        background-color:var(--header-link-pseudoelement);
+    }
+}
+
 .header-link:hover::after {
     position: absolute;
     content: '';
@@ -75,16 +90,17 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-}
 
-.header-cotacts-list__item {
-    display: flex;
-    list-style-type: none;
-}
+    &__item {
+        display: flex;
+        list-style-type: none;
+        margin-right: 50px;
+    }
 
-.header-cotacts-list__item--end {
-    display: flex;
-    list-style-type: none;
+    &__item--end {
+        display: flex;
+        list-style-type: none;
+    }
 }
 
 .contacts-ico-wrapper {
@@ -97,7 +113,6 @@
     transition-property: fill;
     display: flex;
     text-decoration: none;
-    padding-right: 50px;
 
     &:active,
     &:focus,
@@ -140,29 +155,6 @@
     text-decoration: none;
 }
 
-
-.header-link{
-    font-family: $main_font;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    /*var*/
-    color: var(--header-link-default);
-    text-decoration: none;
-
-    &:active,
-    &:focus,
-    &:hover{
-    font-family: $main_font;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--header-link-active);
-    text-decoration: none;
-}
-}
 
 .contact-anker{
     font-family: $main_font;
